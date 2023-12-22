@@ -1,5 +1,39 @@
 [
   {
+    "name": "shs100k_svL_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k/svL_1000-train.txt",
+    "validset": "data/shs100k/svL_1000-valid.txt",
+    "testset": "data/shs100k/svL_1000-valid.txt"
+  },
+  {
+    "name": "shs100k_svS_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k/svS_1000-train.txt",
+    "validset": "data/shs100k/svS_1000-valid.txt",
+    "testset": "data/shs100k/svS_1000-valid.txt"
+  },{
+    "name": "shs100k_vvL_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k/vvL_1000-train.txt",
+    "validset": "data/shs100k/vvL_1000-valid.txt",
+    "testset": "data/shs100k/vvL_1000-valid.txt"
+  },
+  {
+    "name": "shs100k_vvS_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k/vvS_1000-train.txt",
+    "validset": "data/shs100k/vvS_1000-valid.txt",
+    "testset": "data/shs100k/vvL_1000-valid.txt"
+  },
+  {
+    "name": "shs_youtube_base",
+    "category": ["0", "1"],
+    "trainset": "data/shs_youtube/title_channel/train.txt",
+    "validset": "data/shs_youtube/title_channel/valid.txt",
+    "testset": "data/shs_youtube/title_channel/test.txt"
+  },
+  {
     "name": "Amazon-Google",
     "category": ["0", "1"],
     "trainset": "data/Amazon-Google/train.txt",
