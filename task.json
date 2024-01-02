@@ -2,29 +2,29 @@
   {
     "name": "shs100k_svL_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k/svL_1000-train.txt",
-    "validset": "data/shs100k/svL_1000-valid.txt",
-    "testset": "data/shs100k/svL_1000-valid.txt"
+    "trainset": "data/shs100k_1000/svL-train.txt",
+    "validset": "data/shs100k_1000/svL-valid.txt",
+    "testset": "data/shs100k_1000/svL-valid.txt"
   },
   {
     "name": "shs100k_svS_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k/svS_1000-train.txt",
-    "validset": "data/shs100k/svS_1000-valid.txt",
-    "testset": "data/shs100k/svS_1000-valid.txt"
+    "trainset": "data/shs100k_1000/svS-train.txt",
+    "validset": "data/shs100k_1000/svS-valid.txt",
+    "testset": "data/shs100k_1000/svS-valid.txt"
   },{
     "name": "shs100k_vvL_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k/vvL_1000-train.txt",
-    "validset": "data/shs100k/vvL_1000-valid.txt",
-    "testset": "data/shs100k/vvL_1000-valid.txt"
+    "trainset": "data/shs100k_1000/vvL-train.txt",
+    "validset": "data/shs100k_1000/vvL-valid.txt",
+    "testset": "data/shs100k_1000/vvL-valid.txt"
   },
   {
     "name": "shs100k_vvS_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k/vvS_1000-train.txt",
-    "validset": "data/shs100k/vvS_1000-valid.txt",
-    "testset": "data/shs100k/vvL_1000-valid.txt"
+    "trainset": "data/shs100k_1000/vvS-train.txt",
+    "validset": "data/shs100k_1000/vvS-valid.txt",
+    "testset": "data/shs100k_1000/vvL-valid.txt"
   },
   {
     "name": "shs_youtube_base",
