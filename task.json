@@ -1,30 +1,45 @@
 [
   {
-    "name": "shs100k_svL_1000",
+    "name": "shs100k_svLong_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k_1000/svL-train.txt",
-    "validset": "data/shs100k_1000/svL-valid.txt",
-    "testset": "data/shs100k_1000/svL-valid.txt"
+    "trainset": "data/shs100k_1000/svLong-train.txt",
+    "validset": "data/shs100k_1000/svLong-valid.txt",
+    "testset": "data/shs100k_1000/svLong-valid.txt"
   },
   {
-    "name": "shs100k_svS_1000",
+    "name": "shs100k_svShort_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k_1000/svS-train.txt",
-    "validset": "data/shs100k_1000/svS-valid.txt",
-    "testset": "data/shs100k_1000/svS-valid.txt"
-  },{
-    "name": "shs100k_vvL_1000",
-    "category": ["0", "1"],
-    "trainset": "data/shs100k_1000/vvL-train.txt",
-    "validset": "data/shs100k_1000/vvL-valid.txt",
-    "testset": "data/shs100k_1000/vvL-valid.txt"
+    "trainset": "data/shs100k_1000/svShort-train.txt",
+    "validset": "data/shs100k_1000/svShort-valid.txt",
+    "testset": "data/shs100k_1000/svShort-valid.txt"
   },
   {
-    "name": "shs100k_vvS_1000",
+    "name": "shs100k_svShort+Tags_1000",
     "category": ["0", "1"],
-    "trainset": "data/shs100k_1000/vvS-train.txt",
-    "validset": "data/shs100k_1000/vvS-valid.txt",
-    "testset": "data/shs100k_1000/vvL-valid.txt"
+    "trainset": "data/shs100k_1000/svShort+Tags-train.txt",
+    "validset": "data/shs100k_1000/svShort+Tags-valid.txt",
+    "testset": "data/shs100k_1000/svShort+Tags-valid.txt"
+  },
+  {
+    "name": "shs100k_vvLong_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k_1000/vvLong-train.txt",
+    "validset": "data/shs100k_1000/vvLong-valid.txt",
+    "testset": "data/shs100k_1000/vvLong-valid.txt"
+  },
+  {
+    "name": "shs100k_vvShort_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k_1000/vvShort-train.txt",
+    "validset": "data/shs100k_1000/vvShort-valid.txt",
+    "testset": "data/shs100k_1000/vvShort-valid.txt"
+  },
+  {
+    "name": "shs100k_vvShort+Tags_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k_1000/vvShort+Tags-train.txt",
+    "validset": "data/shs100k_1000/vvShort+Tags-valid.txt",
+    "testset": "data/shs100k_1000/vvShort+Tags-valid.txt"
   },
   {
     "name": "shs_youtube_base",
