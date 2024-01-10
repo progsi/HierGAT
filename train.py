@@ -90,13 +90,12 @@ def initialize_and_train(trainset, validset, testset, attr_num, args, run_tag):
 
         if dev_f1 > 1e-6:
             epoch += 1
-            if args.save_model:
-                if dev_f1 > best_dev_f1:
-                    best_dev_f1 = dev_f1
-                    torch.save(model.state_dict(), run_tag + '_dev.pt')
-                if test_f1 > best_test_f1:
-                    best_test_f1 = dev_f1
-                    torch.save(model.state_dict(), run_tag + '_test.pt')
+            if dev_f1 > best_dev_f1:
+                best_dev_f1 = dev_f1
+                torch.save(model.state_dict(), run_tag + '_dev.pt')
+            if test_f1 > best_test_f1:
+                best_test_f1 = dev_f1
+                torch.save(model.state_dict(), run_tag + '_test.pt')
 
     writer.close()
 
@@ -104,18 +103,19 @@ def initialize_and_train(trainset, validset, testset, attr_num, args, run_tag):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     #parser.add_argument("--task", type=str, default="Amazon-Google")
-    parser.add_argument("--task", type=str, default="shs100k_vvS_1000")
+    parser.add_argument("--task", type=str, default="shs100k_vvShort_1000")
     parser.add_argument("--run_id", type=int, default=0)
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--max_len", type=int, default=256)
     parser.add_argument("--lr", type=float, default=1e-5)
     parser.add_argument("--n_epochs", type=int, default=10)
     parser.add_argument("--finetuning", dest="finetuning", action="store_true")
-    parser.add_argument("--save_model", dest="save_model", action="store_true")
+   # parser.add_argument("--save_model", dest="save_model", action="store_true")
     parser.add_argument("--logdir", type=str, default="checkpoints/")
     parser.add_argument("--lm_path", type=str, default=None)
+    # parser.add_argument("--split", dest="split", action="store_true")
     parser.add_argument("--split", dest="split", action="store_true")
-    parser.add_argument("--lm", type=str, default='bert')
+    parser.add_argument("--lm", type=str, default='roberta')
 
     args = parser.parse_args()
 
@@ -140,5 +140,7 @@ if __name__ == "__main__":
     train_dataset = Dataset(trainset, category, lm=args.lm, lm_path=args.lm_path, max_len=args.max_len, split=args.split)
     valid_dataset = Dataset(validset, category, lm=args.lm, lm_path=args.lm_path, split=args.split)
     test_dataset = Dataset(testset, category, lm=args.lm, lm_path=args.lm_path, split=args.split)
-
+    
+    print(f"attr_num: {train_dataset.get_attr_num()}")
+    
     initialize_and_train(train_dataset, valid_dataset, test_dataset, train_dataset.get_attr_num(), args, run_tag)

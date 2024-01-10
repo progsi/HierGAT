@@ -11,6 +11,7 @@ class TranHGAT(nn.Module):
         super().__init__()
 
         # load the model or model checkpoint
+        self.attr_num = attr_num
         path = get_lm_path(lm, lm_path)
         self.lm = lm
         if lm == 'bert':
