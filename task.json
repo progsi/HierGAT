@@ -1,5 +1,19 @@
 [
   {
+    "name": "shs100k_rShort_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k_1000/rShort-train.txt",
+    "validset": "data/shs100k_1000/rShort-valid.txt",
+    "testset": "data/shs100k_1000/rShort-valid.txt"
+  },
+  {
+    "name": "shs100k_rLong_1000",
+    "category": ["0", "1"],
+    "trainset": "data/shs100k_1000/rLong-train.txt",
+    "validset": "data/shs100k_1000/rLong-valid.txt",
+    "testset": "data/shs100k_1000/rLong-valid.txt"
+  },
+  {
     "name": "shs100k_svLong_1000",
     "category": ["0", "1"],
     "trainset": "data/shs100k_1000/svLong-train.txt",
