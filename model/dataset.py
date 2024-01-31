@@ -5,7 +5,7 @@ import numpy as np
 import torch
 
 from torch.utils import data
-
+from transformers import AutoModel, AutoTokenizer
 # from .argument import Augmenter
 
 tokenizer = None
@@ -42,6 +42,8 @@ def get_tokenizer(lm, lm_path):
         elif lm == 'xlnet':
             from transformers import XLNetTokenizer
             tokenizer = XLNetTokenizer.from_pretrained(path)
+        else:
+            tokenizer = AutoTokenizer.from_pretrained(lm)
 
     return tokenizer
 

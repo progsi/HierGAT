@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 from .layer import AttentionLayer as AL, GlobalAttentionLayer as GoAL, StructAttentionLayer as SAL
 from .dataset import get_lm_path
-
+from transformers import AutoModel, AutoTokenizer
 
 class TranHGAT(nn.Module):
     def __init__(self, attr_num, device='cpu', finetuning=True, lm='bert', lm_path=None):
@@ -26,6 +26,8 @@ class TranHGAT(nn.Module):
         elif lm == 'xlnet':
             from transformers import XLNetModel
             self.bert = XLNetModel.from_pretrained(path)
+        else:
+            self.bert = AutoModel.from_pretrained(lm)
 
         self.device = device
         self.finetuning = finetuning
